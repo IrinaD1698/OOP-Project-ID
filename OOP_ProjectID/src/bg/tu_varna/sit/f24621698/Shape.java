@@ -1,5 +1,8 @@
 package bg.tu_varna.sit.f24621698;
 
 public abstract class Shape {
-    //Базов клас за всички фигури
+    public abstract void draw();
+
+    public abstract void translate(int x, int y);
+
 }
