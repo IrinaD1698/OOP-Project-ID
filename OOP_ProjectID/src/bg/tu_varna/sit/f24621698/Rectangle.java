@@ -1,11 +1,10 @@
 package bg.tu_varna.sit.f24621698;
 
 public class Rectangle extends Shape {
-    private int x, y, width, height;
+    private int width, height;
 
     public Rectangle(int x, int y, int width, int height) {
-        this.x = x;
-        this.y = y;
+       super(x,y);
         this.width = width;
         this.height = height;
     }

@@ -5,8 +5,7 @@ package bg.tu_varna.sit.f24621698;
         private int x, y, r;
 
         public Circle(int x, int y, int r) {
-            this.x = x;
-            this.y = y;
+          super(x,y);
             this.r = r;
         }
 
