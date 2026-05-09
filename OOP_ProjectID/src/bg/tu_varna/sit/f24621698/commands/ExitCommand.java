@@ -1,14 +1,14 @@
 package bg.tu_varna.sit.f24621698.commands;
 
-import bg.tu_varna.sit.f24621698.cli.Context;
-import bg.tu_varna.sit.f24621698.cli.CLI;
+import bg.tu_varna.sit.f24621698.cmdlintf.Context;
+import bg.tu_varna.sit.f24621698.cmdlintf.CmdLIntf;
 
 public class ExitCommand implements Command {
 
-    private CLI cli;
+    private CmdLIntf cmdLIntf;
 
-    public ExitCommand(CLI cli) {
-        this.cli = cli;
+    public ExitCommand(CmdLIntf cli) {
+        this.cmdLIntf = cli;
     }
 
     @Override
@@ -19,6 +19,6 @@ public class ExitCommand implements Command {
     @Override
     public void execute(String[] args, Context context) {
         System.out.println("Exiting program.");
-        cli.stop();
+        cmdLIntf.stop();
     }
 }
